@@ -1,0 +1,67 @@
+boolean isOk = true;
+        boolean work =true;
+        int perOpenNumber = operandsFirstIndex.size();
+            for (int i = 0; i < input.size(); i++) {
+                if (input.get(i).equalsIgnoreCase("(")) {
+                    int firstIndex = input.indexOf("(");
+                    int lastIndex = input.lastIndexOf(")");
+                    if (isOk) {
+                        for (int j = firstIndex + 1; j < lastIndex; j++) {
+                            permition.add(input.get(j));
+                            isOk = false;
+
+                        }
+                    }
+
+                }
+            }
+            while (operandsFirstIndex.size()!=0){
+                for(int i =0;i<permition.size();i++){
+                    
+                }
+                
+                
+                
+                
+            }
+
+
+
+
+
+
+comment:
+/*        for (int i = 0; i < arrayList.size(); i++) {
+            if (checkIsNumber(arrayList.get(i))) {
+                stackNumbers.push(arrayList.get(i));
+
+            } else if (checkLevel(arrayList.get(i)) >= checkPriority) {
+                checkPriority = checkLevel(arrayList.get(i));
+                stackOperands.push(arrayList.get(i));
+                stackOperands.print();
+
+            } else {
+                while (!stackOperands.isEmpty()) {
+
+                    stackNumbers.push(stackNumbers.pop() + " " + stackNumbers.pop() + " " + stackOperands.pop());
+
+                }
+                checkPriority--;
+            }
+
+            stackNumbers.print();
+
+            stackOperands.print();
+        }*/
+        //YoghartTouch
+    /*    stackNumbers.push(stackNumbers.pop() + " " + oper.get(oper.size() - 1) + " ");
+        stackNumbers.push(stackNumbers.pop() + " " + oper.get(oper.size() - 2) + " ");
+        stackNumbers.print();*/
+//            stackNumbers.push(  stackOperands.pop());
+//            stackNumbers.print();
+comment :
+       /* for (int i = 0; i < operandsFirstIndex.size(); i++) {
+            firstOper = operandsFirstIndex.get(operandsFirstIndex.size() - i - 1);
+            lastOper = operandsLastIndex.get(i);
+            generateStack(input, firstOper + 1, lastOper);*/
+//            input = replaceArray(input,firstOper,lastOper);
